@@ -50,7 +50,7 @@ const StaticInfo = () => {
 
       {info ? (
         <div>
-          <h3>You got an Access Token and called your custom API!</h3>
+          <h3>SUCCESS: You got an Access Token and called your custom API!</h3>
           {info.data.map((i, index) => (
             <ul key={index} id={`list${index + 1}`}>
               <li>{i.message}</li>
