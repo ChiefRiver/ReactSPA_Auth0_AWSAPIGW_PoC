@@ -4,7 +4,7 @@ import { Container } from "reactstrap";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import Loading from './Components/Loading';
-import Navbar from './AuthFunctions/Navbar';
+import Navbar from './Components/Navbar';
 import Home from './Views/Home';
 
 import './App.css';

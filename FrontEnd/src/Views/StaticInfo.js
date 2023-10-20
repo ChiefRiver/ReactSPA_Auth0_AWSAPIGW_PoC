@@ -3,6 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Loading from '../Components/Loading';
 import { API_BASE_URL } from '../Config/globals';
 import './StaticInfo.css'
+import { AUDIANCE, CUSTOMSCOPES } from '../Config/globals';
 
 
 const StaticInfo = () => {
@@ -15,8 +16,8 @@ const StaticInfo = () => {
       try {
         const token = await getAccessTokenSilently({
           authorizationParams: {
-            audience: 'http://blah.com',
-            scope: 'read:info',
+            audience: AUDIANCE,
+            scope: CUSTOMSCOPES,
           },
         });
         const response = await fetch(API_BASE_URL+'/static', {

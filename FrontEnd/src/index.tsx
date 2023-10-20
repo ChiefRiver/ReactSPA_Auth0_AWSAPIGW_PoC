@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from '@auth0/auth0-react';
-import { DOMAIN, CLIENTID, AUDIANCE, SCOPE } from './Config/globals'
+import { DOMAIN, CLIENTID, AUDIANCE, OIDCSCOPES, CUSTOMSCOPES } from './Config/globals'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +17,7 @@ root.render(
       redirect_uri: window.location.origin,
       audience: AUDIANCE,
       responseType: 'token id_token',
-      scope: SCOPE
+      scope: OIDCSCOPES +" "+ CUSTOMSCOPES
     }}
   >
     <App />
