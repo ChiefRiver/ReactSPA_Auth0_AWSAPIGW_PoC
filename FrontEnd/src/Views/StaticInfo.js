@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from '../Components/Loading';
+import { API_BASE_URL } from '../Config/globals';
 import './StaticInfo.css'
 
 
@@ -18,7 +19,7 @@ const StaticInfo = () => {
             scope: 'read:info',
           },
         });
-        const response = await fetch('https://l91lozyyc9.execute-api.us-east-1.amazonaws.com/v1/static', {
+        const response = await fetch(API_BASE_URL+'/v1/static', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

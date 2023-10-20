@@ -4,19 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { DOMAIN, CLIENTID, AUDIANCE, SCOPE } from './Config/globals'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
 <Auth0Provider
-    domain="dev-nfmgw5fwvjeau2ay.us.auth0.com"
-    clientId="b3XxmjcJM1ZYM1S5I0W2CUGAg93IvgSM"
+    domain= {DOMAIN}
+    clientId={CLIENTID}
     authorizationParams={{
       redirect_uri: window.location.origin,
-      audience: "http://blah.com",
+      audience: AUDIANCE,
       responseType: 'token id_token',
-      scope: "openid profile email read:info"
+      scope: SCOPE
     }}
   >
     <App />
