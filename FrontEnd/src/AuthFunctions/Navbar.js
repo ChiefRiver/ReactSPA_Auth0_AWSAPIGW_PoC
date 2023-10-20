@@ -6,7 +6,7 @@ import LoginButton from "./LoginButton";
 
 
 const Profile = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const {isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
     return <div>Loading ...</div>;

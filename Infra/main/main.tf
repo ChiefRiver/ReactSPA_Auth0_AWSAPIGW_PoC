@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 module "Solution" {
-  source = "../../solution"
+  source = "../solution"
   region = var.primary_aws_region
   environment = var.environment
   Auth0Domain = var.Auth0Domain

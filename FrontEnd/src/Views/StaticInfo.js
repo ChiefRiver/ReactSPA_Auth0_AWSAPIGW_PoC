@@ -19,7 +19,7 @@ const StaticInfo = () => {
             scope: 'read:info',
           },
         });
-        const response = await fetch(API_BASE_URL+'/v1/static', {
+        const response = await fetch(API_BASE_URL+'/static', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
