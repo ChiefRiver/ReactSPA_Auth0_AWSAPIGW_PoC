@@ -1,0 +1,14 @@
+/* styles.css */
+.centered-table {
+    margin: 0 auto; /* Center the table horizontally */
+    border: 1px solid #ccc; /* Add a 1px solid border */
+    border-collapse: collapse; /* Collapse borders into a single border line */
+  }
+  
+  .centered-table th, .centered-table td {
+    padding: 10px; /* Add padding to table cells */
+    border: 1px solid #ccc; /* Add a 1px solid border to table cells */
+    text-align: center; /* Center text in table cells */
+  }
+
+  
