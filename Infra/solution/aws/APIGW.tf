@@ -8,7 +8,7 @@ resource "aws_apigatewayv2_api" "apigw" {
       allow_headers = ["authorization"]
       allow_methods = ["GET"]
       allow_credentials = "true"
-      allow_origins = ["http://localhost:3000"]
+      allow_origins = ["http://localhost:3000","http://localhost:3000/"]
   }
 }
 

@@ -36,6 +36,7 @@ const StaticInfo = () => {
 
     if (fetchData && isAuthenticated) {
       fetchDataFromAPI();
+      setFetchData(false);
     }
   }, [getAccessTokenSilently, fetchData, isAuthenticated]);
 

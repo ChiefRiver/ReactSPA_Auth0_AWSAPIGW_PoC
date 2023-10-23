@@ -9,6 +9,9 @@ variable "primary_aws_region" {
 variable "Auth0Domain" {
  description = "Domain of the Auth0 account used for Authorization of API GW" 
 }
+variable "Auth0FullDomain" {
+   description = "Full Domain of the Auth0 account used for Authorization of API GW" 
+}
 variable "APIAudience" {
   description = "Audiance value of the APIs for API GW to validate" 
 }

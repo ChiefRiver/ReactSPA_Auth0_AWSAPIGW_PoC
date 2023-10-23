@@ -1,10 +1,7 @@
 exports.handler = async (event) => {
     const response = {
         data:[{
-                "message":"Hello World"
-            },
-            {
-                "message":"Hello World again!"
+                "message":"This is Data returned from you API!"
             }
         ]
     };
