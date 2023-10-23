@@ -28,6 +28,7 @@
     * Ensure you have credentials set
         * For AWS Account
         * For Auth0 Account 
+            * Setup a "machine to machine application" and provide all permissions to this Application to allow for TF deployment
     * Init and apply the AWS & Auth0 infrastructure
         ```
         cd Infra/main

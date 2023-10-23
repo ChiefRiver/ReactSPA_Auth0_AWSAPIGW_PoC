@@ -19,7 +19,11 @@ function App() {
   }
 
   if (isLoading) {
-    return <Loading />;
+    return <div className="container">
+      <p>There could be an issue with you client config</p>
+      <p>Please check your <b>globals.js</b> config file</p>
+      <Loading />
+      </div>
   }
 
   return (
