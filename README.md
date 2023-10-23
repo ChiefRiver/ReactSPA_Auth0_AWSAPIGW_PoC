@@ -28,12 +28,16 @@
     * Ensure you have credentials set
         * For AWS Account
         * For Auth0 Account 
-    * Cd Infra/main && Terraform init && Terraform deploy
+    * Init and apply the AWS & Auth0 infrastructure
+        ```
+        cd Infra/main
+        terrafrom init && terraform apply
+        ```
     * Required TF Outputs for Configuring Front End
         * API GW Base URL. Note this down for below step
         * Auth0 Client ID, Run the following command:
         ```
-            terraform output Auth0_InfraOutputs
+        terraform output Auth0_InfraOutputs
         ```
 * Deploy Front End
     * cd to Frontend/src/Config and edit globals.js
