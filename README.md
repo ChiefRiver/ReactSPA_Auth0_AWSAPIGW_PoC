@@ -1,9 +1,9 @@
-<h1>This contains the following Components</h1>
+<h1>Repo Components</h1>
 
-* Infra
+* Infrastructure
     * Terraform to deploy AWS REST based APIGW with JWT Authorization
     * Terraform to deply Auth0 Client and Authorization Server
-* APIs
+* API
     * Simple Node.js running on Lambda to return a json object
 * FrontEnd
     * React SPA to perform authentication (OIDC) and then pull an access token from Auth0 Authorization server to send to the above AWS API GW
