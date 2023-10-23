@@ -1,10 +1,24 @@
 <h1>This contains the following Components</h1>
-* Infra - Terraform to deploy and REST based APIGW with JWT Authorization
-* APIs - Simple Node.js Lambda Code to return a json object
-* FrontEnd - a React app to perform authentication (OIDC) and then pull an access token from an auth server to send to the above infrastructure
-* TODO - Auth0 IaC - Right now Auth0 was setup via click ops. Need to move to IaC to complete this PoC repo
+
+* Infra
+    * Terraform to deploy AWS REST based APIGW with JWT Authorization
+    * Terraform to deply Auth0 Client and Authorization Server
+* APIs
+    * Simple Node.js running on Lambda to return a json object
+* FrontEnd
+    * React SPA to perform authentication (OIDC) and then pull an access token from Auth0 Authorization server to send to the above AWS API GW
+
+<h1>Overview</h1>
+
+![alt text](./Images/Auth0_Diagram.png?raw=true)
 
 <h1>How to Setup</h1>
+
+* Dependencies 
+    * Terraform
+    * Node
+    * AWS Account
+    * Auth0 Developer Account
 
 * Deploy Infra
     * Cd Infra/main && Terraform init && Terraform deploy
