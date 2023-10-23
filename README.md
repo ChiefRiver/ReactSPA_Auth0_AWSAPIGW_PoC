@@ -31,15 +31,16 @@
             * Setup a "machine to machine application" and provide all permissions to this Application to allow for TF deployment
     * Init and apply the AWS & Auth0 infrastructure
         ```
-        cd Infra/main
+        cd ./Infra/main
         terrafrom init && terraform apply
         ```
     * Required TF Outputs for Configuring Front End
-        * API GW Base URL. Note this down for below step
-        * Auth0 Client ID, Run the following command:
-        ```
-        terraform output Auth0_InfraOutputs
-        ```
+        * API GW Base URL
+        * Auth0 Client ID
+            * Run the following command:
+            ```
+            terraform output Auth0_InfraOutputs
+            ```
 * Deploy Front End
     * cd to Frontend/src/Config and edit globals.js
     * Update all global config vars
