@@ -27,8 +27,13 @@
 * Deploy Infra
     * Ensure you have credentials set
         * For AWS Account
+            * export AWS_ACCESS_KEY_ID='Access Key'
+            * export AWS_SECRET_ACCESS_KEY='Secret Key'
         * For Auth0 Account 
             * Setup a "machine to machine application" and provide all permissions to this Application to allow for TF deployment
+            * export AUTH0_DOMAIN='Your Dev Auth0 Domian eg 'dev-nfmgw5fwvgsau2ay.us.auth0.com''
+            * export AUTH0_CLIENT_ID='M2M client ID for managing Auth0'
+            * export AUTH0_CLIENT_SECRET='M2M client Secret'
     * Init and apply the AWS & Auth0 infrastructure
         ```
         cd ./Infra/main
